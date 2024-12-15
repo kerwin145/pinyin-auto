@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinyin Auto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        canvas {
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+
+        .input-group {
+            margin: 10px 0;
+        }
+
+        .input-group label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chinese Pinyin Alignment Tool</h1>
+    <div class="input-group">
+        <label for="characters">Chinese Characters:</label>
+        <input type="text" id="characters" placeholder="Enter Chinese characters" />
+    </div>
+    <div class="input-group">
+        <label for="pinyin">Pinyin:</label>
+        <input type="text" id="pinyin" placeholder="Enter Pinyin" />
+    </div>
+    <button id="render">Render</button>
+    <button id="export">Export to Clipboard</button>
+    <div id="preview">
+        <h1>Test</h1>
+        <p>YESSIR</p>
+    </div>
+    <script src="min_html2canvas.js"></script>
+    <script src="renderer.js"></script>
+</body>
+</html>
